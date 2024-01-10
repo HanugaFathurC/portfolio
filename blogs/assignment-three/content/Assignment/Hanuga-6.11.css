@@ -1,0 +1,29 @@
+div.navbar 
+{ font-family : 'Times New Roman', Times, serif;
+  white-space: no warp;
+}
+
+div.navbar > span.self
+{ font-weight: bold ;
+  color: red ;
+  border-left: thick #000 solid;     
+  padding: 5px 5px                 
+}
+
+div.navbar > a:visited,            
+div.navbar > a:active,            
+div.navbar > a:link
+{  padding: 5px 5px ;               
+   color: #300;
+   border-left: thick #000 solid;     
+   text-decoration:none
+} 
+
+div.navbar > a:hover 
+{ background-color:aquamarine;
+  color: #200;
+  padding: 5px 5px ;             
+  border-top: thin #000 solid;     
+  border-bottom: thin #000 solid;     
+  text-decoration:none
+}

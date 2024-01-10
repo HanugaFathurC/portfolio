@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Style properties - Hanuga - 陈 智 才 - L20231007</title>
+  <style>
+  .radius {
+    width: 300px;
+    height: 300px;
+    background: green;
+    color: white;
+    border-radius: 150px;
+    border-radius: 0px 150px 0px 150px;
+  }
+
+
+  .shadow {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    text-align: center;
+    color: bisque;
+    box-shadow: 10px 10px 3px 10px goldenrod inset;
+  }
+ 
+  .borderImg {
+    width: 300px;
+    height: 200px;
+    border: 15px solid transparent;
+    border-image: url('../../../assets/blogs/assignment-five/border.png') 27 / 20px round;
+  }
+  </style>
+</head>
+<body>
+  <div class="radius">Leaf</div>
+  <div class="shadow">shadow</div>
+  <div class="borderImg">with Border Img</div> 
+</body>
+</html>

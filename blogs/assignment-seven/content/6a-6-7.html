@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hanuga  | 陈 智 才 - L20231007 - 2D and 3D conversion animation effect</title>
+	<style> 
+	
+	:root {
+	--size: 100px;
+	}
+
+	body {
+		margin: 0;
+		height: 100vh;
+	}
+	
+	 .transform{
+	  	width:300px;
+	  	height: 200px;
+	  	background: green;
+		transition: all 2s;
+		
+     }
+
+	 .transform:hover{
+		transform: skew(180deg);
+		
+	 }
+   
+     .tf{
+     	width:100px;
+     	height: 100px;
+     	background: black;
+     	transform: translate3d(50px,50px,500px);
+		transform-style: preserve-3d;
+     }
+
+     .tf1{
+     	width:100px;
+     	height: 100px;
+     	background: yellow;
+     	transform: translate3d(0,0,200px);
+		transform-style: preserve-3d;
+     }
+
+     .rotate{
+     	width: 100px;
+     	height: 100px;
+     	background: green;
+     	transition: all 2s;
+		transform-style: preserve-3d;
+     }
+     .rotate:hover{
+     	transform: rotateX(180deg);
+     }
+
+	 .perspective {
+		position: relative;
+		left: 50vw;
+		perspective: 800px;
+		perspective-origin: 50% -200px;
+	}
+
+	.box {  
+		width: var(--size);
+		aspect-ratio: 1;  
+		position: relative;
+		transform-style: preserve-3d;
+		transform-origin: 50px bottom -50px;
+		animation: rotate 4s linear infinite;
+	}
+
+	.face {
+		position: absolute;
+		width: var(--size);
+		aspect-ratio: 1;
+		background-color: goldenrod;
+		transform-style: preserve-3d;
+	}
+
+
+	.face.bottom {
+		top: 100%;
+		transform-origin: top;
+		transform: rotateX(-90deg);
+	}
+
+	.face.top {
+		bottom: 100%;
+		transform-origin: bottom;
+		transform: rotateX(90deg);
+	}
+
+	.face.back {
+		bottom: 200%;
+		transform-origin: center 150px -50px;
+		transform: rotateX(180deg);
+	}
+
+	.face.right {
+		left: 100%;
+		transform-origin: left;
+		transform: rotateY(90deg);
+	}
+
+	.face.left {
+		right: 100%;
+		transform-origin: right;
+		transform: rotateY(-90deg);
+	}
+
+	@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+	}
+
+	</style>
+</head>
+<body>
+	<div class="transform"></div>
+	<div class="tf"></div>
+	<div class="tf1"></div>
+	<div class="rotate">Hello</div>
+	<div class="perspective">
+		<div class="box">
+		  <div class="face top"></div>
+		  <div class="face bottom"></div>
+		  <div class="face back"></div>
+		  <div class="face front"></div>
+		  <div class="face left"></div>
+		  <div class="face right"></div>
+		</div>
+	</div>
+</body>
+</html>

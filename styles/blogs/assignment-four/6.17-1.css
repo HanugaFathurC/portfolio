@@ -1,0 +1,5 @@
+table.images img
+{ border:none ;
+  display: block ;
+}
+ table.images a { display: block ;}

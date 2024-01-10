@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hanuga  | 陈 智 才 - L20231007 - Animation effects</title>
+<style>
+
+  body{
+    background-color: aqua;
+  }
+
+  .test {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    animation: 4s linear 0s infinite  moving;
+
+  }
+
+  .test:hover {
+    animation-play-state: paused;
+  }
+
+  span {
+    position: absolute;
+    left: 30%;
+    animation: 4s linear 0s infinite rotate;
+  }
+
+  span:hover {
+    animation-play-state: paused;
+  }
+
+  .testTwo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10%;
+    background-color: red;
+    position: relative;
+    animation: 4s infinite changeColor;
+  }
+
+  @keyframes changeColor {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  @keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes moving{
+    from {
+      transform: translateX(-10vw);
+    }
+    to {
+      transform: translateX(100vw);
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="test">
+    <span>
+      Spinning
+    </span>
+  </div>
+  <div class="testTwo">
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.7 - 3.10 Tables - Hanuga 陈 智 才 - L20231007</title>
+</head>
+<body>
+    <!-- 3.7 POSITIONING TABLES -->
+    <table border="8" cellspacing="16" style="float: right ; margin-right: 1em; background-color: aquamarine;" >
+        <caption style="font-weight: bold; caption-side: bottom;">4 Divers Things</caption>
+        <tr align="center">
+            <td>Weather</td>
+            <td>Flowers</td>
+        </tr>
+        <tr align="center">
+            <td>Transportation</td>
+            <td>Education</td>
+        </tr>
+    </table>
+    <p>Hi ! My name is Hanuga Fathur. I am software engineering student from Nanjing Xiaozhuang University.</p>
+    <br>
+    <!-- 3.8 TABLE WIDTH AND HIGHT -->
+
+    <table width="60%" border="1" cellspacing ="0" cellpadding ="0" style="margin-left:auto; margin-right:auto;background-color:salmon; color: aliceblue;  ">
+        <tr align="center">
+            <td style="width: 10%;">Width 10%</td>
+            <td style="width: 20%;">Width 20%</td>
+            <td style="width: 30%;">Width 30%</td>
+            <td style="width: 40%;">Width 40%</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table width="1200" border="1" cellspacing ="0" cellpadding ="0" style="margin-left:auto; margin-right:auto;background-color:burlywood ">
+        <tr align="center">
+            <td style="width: 100;">Width 100</td>
+            <td style="width: 200;">Width 200</td>
+            <td style="width: 300;">Width 300</td>
+            <td style="width: 400;">Width 400</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <!-- 3.8.1 ROW AND COLUMN SPANS -->
+
+    <table width="240">
+        <tr align="center">
+            <td colspan="2" style="background-color:black; color: white; height: 80px">1
+            </td>
+            <td rowspan="2" style="background-color:purple">2
+            </td>
+        </tr>
+        <tr align="center">
+            <td rowspan="2" style="background-color:red">3
+            </td>
+            <td  style="background-color:pink; color:white; height:80px">4
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2" style="background-color:darkgray ; color: white; height:80px">5
+            </td> 
+        </tr>
+    </table>
+    <br>
+    <br>
+    <!-- 3.9 GROUPING ROWS AND COLUMNS -->
+    <h2>Row Grouping</h2>
+    <table width="400">
+        <thead align="center" style="color:rebeccapurple">
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody align="center" style="color:teal">
+            <tr>
+                <td>Iphone 14 Promax 128 GB</td>
+                <td>Smartphone</td>
+                <td>8142 Kuai</td>
+            </tr>
+            <tr>
+                <td>Mackbook Pro M1 14 inch 2021</td>
+                <td>Laptop</td>                
+                <td>12300 Kuai</td>
+            </tr>
+            <tr>
+                <td>Samsung S23 Ultra 128 GB</td>
+                <td>Smartphone</td>                
+                <td>8812 Kuai</td>
+            </tr>
+            <tr>
+                <td>Samsung Note 23 Ultra 128 Gb</td>
+                <td>Smartphone</td>                
+                <td>9124 Kuai</td>
+            </tr>
+        </tbody>
+    </table>   
+    <br>
+    <br>
+
+    <!-- 3.10 Nesting Tables -->
+
+    <table frame="box" cellpadding="2">
+        <tr valign="top">
+            <td><img src="../../../assets/blogs/assignment-one/road-home.jpeg" alt="road-home" width="200" height="210" /></td>
+            <td>
+                <table cellspacing="5">
+                    <caption style="font-size:larger; font-weight:bold;">Romance Movie</caption>
+                    <tr valign = "top">
+                        <th align="left">Director</th>
+                        <td>Yu Cui Hua</td>
+                    </tr>
+                    <tr valign = "top">
+                        <th align="left">Cast</th>
+                        <td>BoranJing, Seven Tan, lison, Zhang Bo Jia, Wang Hao, Qiaoer Zhang</td>
+                    </tr>
+                    <tr valign = "top">
+                        <th align="left">Description</th>
+                        <td>Road Home is a drama directed by Yu Cuihua (Crush, Eternal Love), along with 
+                            scriptwriter Mobaofeibao (My Sunshine), starring Jin Boran (Up in the Wind, Monster Hunt) 
+                            and Tan Songyun (With You). The drama is based on a novel of the same name by Mobaofei bao.
+                            It tells the story of investment director Gui Xiao who reunites with bomb tech police officer
+                            Lu Yan Chen after ten years. The two of them hit it off and find their way back to loyalty and 
+                            faith. The two are each other's first loves, but after graduating from college, Lu Yan Chen went
+                            to another country to become a special forces police officer, and at the same time, their family 
+                            went though a change, so their love ended without a hitch. Ten years later, the two of them reunite 
+                            and find that they can't repress their longing for each other and get close to each other again.
+                            But the news that Lu Yan Chen's parents had arranged a marriage for him detracts the couple,
+                            and Lu Yan Chen made a decisive choice, understanding that he had only Gui Xiao in his heart
+                            from the beginning. After the wedding, Lu Yan Chen was injured during a mission and fell into 
+                            a coma. The pregnant Xiao Gui rushed to Lu Yan Chen's side and gave birth to her daughter in 
+                            the frontier city that Lu Yan Chen had been guarding for ten years. The family of three is 
+                            reunited safely and lives a happy life. The drama will be broadcasted online on iQIYI's international site (iq.com).</td>
+                    </tr>
+                    <tr valign = "top">
+                        <th align="left">Video link</th>
+                        <td>Watch <a href="https://www.iq.com/album/road-home-2023-2aumbcs193p?lang=eng">here</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

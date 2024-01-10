@@ -1,0 +1,48 @@
+table{
+  border: 1px solid black;
+  margin: 45vh auto;
+}
+
+table.banner td {height: 40px;}
+
+table.banner td.left
+{ background-color:red;
+  background-image: none;
+  width: 20%;
+  border-right: solid white 2px ;
+  font-size: xx-small 
+}
+
+.custome-text-center {
+  text-align: center;
+  background-color: bisque;
+  color: brown;
+}
+
+table.banner td.right
+{ background-color:blue;
+  background-image: none;
+  width: 20%;
+  border-left: solid white 2px ;
+  font-size: xx-small 
+}
+
+table.banner td.spacer
+{ background-color:green;
+  background-image: none;
+  width: 15%;
+  font-size: xx-small 
+}
+
+table.banner td.char
+{ background-color:green;
+  background-image: none;
+  color: white;
+  font-family: Courier;
+  font-size: 150%;
+  font-weight: bold 
+}
+ body
+{ background-color:white;
+  margin: 0px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hanuga  | 陈 智 才 - L20231007 - Transition skills</title>
+<style>
+  .box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000ff;
+    color: aliceblue;
+    transition: width 2s, height 2s, background-color 2s, rotate 2s;
+  }
+  .box:hover {
+    background-color: #ffcccc;
+    color: black;
+    width: 200px;
+    height: 200px;
+    rotate: 180deg;
+  }
+  .speed2 {
+    transition: all 2s linear;
+  }
+  .speed3 {
+    transition: all 2s ease-in;
+  }
+  .speed4 {
+    transition: all 2s ease-out;
+  }
+  .speed5 {
+    transition: all 2s ease-in-out;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">Box One</div>
+  <div class="box speed2">Box Two</div>
+  <div class="box speed3">Box Three</div>
+  <div class="box speed4">Box Four</div>
+  <div class="box speed5">Box Five</div>
+</body>
+</html>
